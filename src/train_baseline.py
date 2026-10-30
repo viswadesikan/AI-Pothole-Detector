@@ -26,6 +26,7 @@ def parse_args():
     p.add_argument("--patience", type=int, default=30, help="stop if val does not improve")
     p.add_argument("--name", default=None)
     p.add_argument("--smoke", action="store_true", help="tiny run to test the pipeline")
+    p.add_argument("--seed", type=int, default=0)
     return p.parse_args()
 
 
@@ -54,7 +55,7 @@ def main():
         name=name,
         exist_ok=a.smoke,       # smoke test may overwrite itself
         pretrained=not a.scratch,
-        seed=0,
+        seed=a.seed,
         deterministic=True,
         cache="ram",            # the dataset is small, so cache it
         fraction=fraction,
@@ -68,7 +69,8 @@ def main():
 
     # score the best weights on the VALIDATION split (the test split stays untouched until Step 3)
     m = YOLO(str(best)).val(data=str(DATA), split="val", imgsz=a.imgsz,
-                            batch=a.batch, workers=a.workers, plots=True)
+                            batch=a.batch, workers=a.workers, plots=True,
+                            project=str(RUNS), name=f"{name}_val", exist_ok=True)
     print("\n--- Validation (best.pt) ---")
     print(f"Precision {m.box.mp:.3f} | Recall {m.box.mr:.3f} | "
           f"mAP50 {m.box.map50:.3f} | mAP50-95 {m.box.map:.3f}")
