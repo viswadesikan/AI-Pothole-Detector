@@ -1,0 +1,9 @@
+--- Conversion summary ---
+boxes_written: 1739
+degenerate_box_dropped: 1
+images_written: 665
+
+Box width  (normalized) min/median/max: 0.020 / 0.191 / 0.996
+Box height (normalized) min/median/max: 0.005 / 0.117 / 0.943
+Small boxes (longest side < 5% of image): 48 of 1739
+Boxes per image min/median/max: 1 / 2 / 19

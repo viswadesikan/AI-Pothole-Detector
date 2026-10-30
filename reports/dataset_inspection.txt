@@ -1,0 +1,788 @@
+RAW folder: D:\Pyspiders Training\Machine Learning\AI Pathole detector\data\raw
+Top level: LICENSE.md, README.md, ann, img, meta.json
+
+--- README.md (first 15 lines) ---
+  # Pothole Detection
+  
+  Pothole Detection is a dataset for object detection task.
+
+!! Licence.md not found
+
+--- Classes in meta.json ---
+  pothole   shape=rectangle
+
+img/ subfolders that contain files: ['.']
+ann/ subfolders that contain files: ['.']
+
+Images: 665   Annotation files: 665
+Duplicate image filenames: 0 []
+Matched pairs: 665   Annotations without image: 0   Images without annotation: 0
+
+
+--- Objects per class ---
+  pothole: 1740
+
+--- Geometry types per class ---
+  pothole / rectangle: 1740
+
+Images with no objects: 0
+Most common image sizes (w, h): [((400, 400), 285), ((400, 300), 63), ((450, 300), 55), ((533, 300), 51), ((451, 300), 13)]
+
+--- Per group (filename prefix) ---
+  potholes0: {'images': 1, 'pothole': 12}
+  potholes1: {'images': 1, 'pothole': 2}
+  potholes10: {'images': 1, 'pothole': 2}
+  potholes100: {'images': 1, 'pothole': 1}
+  potholes101: {'images': 1, 'pothole': 2}
+  potholes102: {'images': 1, 'pothole': 1}
+  potholes103: {'images': 1, 'pothole': 3}
+  potholes104: {'images': 1, 'pothole': 2}
+  potholes105: {'images': 1, 'pothole': 8}
+  potholes106: {'images': 1, 'pothole': 1}
+  potholes107: {'images': 1, 'pothole': 2}
+  potholes108: {'images': 1, 'pothole': 13}
+  potholes109: {'images': 1, 'pothole': 3}
+  potholes11: {'images': 1, 'pothole': 2}
+  potholes110: {'images': 1, 'pothole': 2}
+  potholes111: {'images': 1, 'pothole': 1}
+  potholes112: {'images': 1, 'pothole': 1}
+  potholes113: {'images': 1, 'pothole': 3}
+  potholes114: {'images': 1, 'pothole': 3}
+  potholes115: {'images': 1, 'pothole': 1}
+  potholes116: {'images': 1, 'pothole': 2}
+  potholes117: {'images': 1, 'pothole': 2}
+  potholes118: {'images': 1, 'pothole': 1}
+  potholes119: {'images': 1, 'pothole': 1}
+  potholes12: {'images': 1, 'pothole': 5}
+  potholes120: {'images': 1, 'pothole': 3}
+  potholes121: {'images': 1, 'pothole': 15}
+  potholes122: {'images': 1, 'pothole': 2}
+  potholes123: {'images': 1, 'pothole': 3}
+  potholes124: {'images': 1, 'pothole': 1}
+  potholes125: {'images': 1, 'pothole': 2}
+  potholes126: {'images': 1, 'pothole': 5}
+  potholes127: {'images': 1, 'pothole': 3}
+  potholes128: {'images': 1, 'pothole': 1}
+  potholes129: {'images': 1, 'pothole': 1}
+  potholes13: {'images': 1, 'pothole': 2}
+  potholes130: {'images': 1, 'pothole': 1}
+  potholes131: {'images': 1, 'pothole': 1}
+  potholes132: {'images': 1, 'pothole': 2}
+  potholes133: {'images': 1, 'pothole': 1}
+  potholes134: {'images': 1, 'pothole': 1}
+  potholes135: {'images': 1, 'pothole': 2}
+  potholes136: {'images': 1, 'pothole': 3}
+  potholes137: {'images': 1, 'pothole': 1}
+  potholes138: {'images': 1, 'pothole': 1}
+  potholes139: {'images': 1, 'pothole': 2}
+  potholes14: {'images': 1, 'pothole': 5}
+  potholes140: {'images': 1, 'pothole': 1}
+  potholes141: {'images': 1, 'pothole': 1}
+  potholes142: {'images': 1, 'pothole': 6}
+  potholes143: {'images': 1, 'pothole': 1}
+  potholes144: {'images': 1, 'pothole': 9}
+  potholes145: {'images': 1, 'pothole': 3}
+  potholes146: {'images': 1, 'pothole': 2}
+  potholes147: {'images': 1, 'pothole': 2}
+  potholes148: {'images': 1, 'pothole': 3}
+  potholes149: {'images': 1, 'pothole': 7}
+  potholes15: {'images': 1, 'pothole': 1}
+  potholes150: {'images': 1, 'pothole': 1}
+  potholes151: {'images': 1, 'pothole': 1}
+  potholes152: {'images': 1, 'pothole': 2}
+  potholes153: {'images': 1, 'pothole': 4}
+  potholes154: {'images': 1, 'pothole': 9}
+  potholes155: {'images': 1, 'pothole': 1}
+  potholes156: {'images': 1, 'pothole': 1}
+  potholes157: {'images': 1, 'pothole': 1}
+  potholes158: {'images': 1, 'pothole': 2}
+  potholes159: {'images': 1, 'pothole': 1}
+  potholes16: {'images': 1, 'pothole': 1}
+  potholes160: {'images': 1, 'pothole': 1}
+  potholes161: {'images': 1, 'pothole': 3}
+  potholes162: {'images': 1, 'pothole': 10}
+  potholes163: {'images': 1, 'pothole': 4}
+  potholes164: {'images': 1, 'pothole': 1}
+  potholes165: {'images': 1, 'pothole': 3}
+  potholes166: {'images': 1, 'pothole': 1}
+  potholes167: {'images': 1, 'pothole': 12}
+  potholes168: {'images': 1, 'pothole': 2}
+  potholes169: {'images': 1, 'pothole': 2}
+  potholes17: {'images': 1, 'pothole': 1}
+  potholes170: {'images': 1, 'pothole': 1}
+  potholes171: {'images': 1, 'pothole': 3}
+  potholes172: {'images': 1, 'pothole': 4}
+  potholes173: {'images': 1, 'pothole': 1}
+  potholes174: {'images': 1, 'pothole': 4}
+  potholes175: {'images': 1, 'pothole': 3}
+  potholes176: {'images': 1, 'pothole': 1}
+  potholes177: {'images': 1, 'pothole': 10}
+  potholes178: {'images': 1, 'pothole': 2}
+  potholes179: {'images': 1, 'pothole': 3}
+  potholes18: {'images': 1, 'pothole': 1}
+  potholes180: {'images': 1, 'pothole': 1}
+  potholes181: {'images': 1, 'pothole': 1}
+  potholes182: {'images': 1, 'pothole': 1}
+  potholes183: {'images': 1, 'pothole': 1}
+  potholes184: {'images': 1, 'pothole': 2}
+  potholes185: {'images': 1, 'pothole': 4}
+  potholes186: {'images': 1, 'pothole': 3}
+  potholes187: {'images': 1, 'pothole': 3}
+  potholes188: {'images': 1, 'pothole': 1}
+  potholes189: {'images': 1, 'pothole': 2}
+  potholes19: {'images': 1, 'pothole': 2}
+  potholes190: {'images': 1, 'pothole': 2}
+  potholes191: {'images': 1, 'pothole': 1}
+  potholes192: {'images': 1, 'pothole': 2}
+  potholes193: {'images': 1, 'pothole': 5}
+  potholes194: {'images': 1, 'pothole': 2}
+  potholes195: {'images': 1, 'pothole': 1}
+  potholes196: {'images': 1, 'pothole': 2}
+  potholes197: {'images': 1, 'pothole': 1}
+  potholes198: {'images': 1, 'pothole': 2}
+  potholes199: {'images': 1, 'pothole': 3}
+  potholes2: {'images': 1, 'pothole': 2}
+  potholes20: {'images': 1, 'pothole': 2}
+  potholes200: {'images': 1, 'pothole': 2}
+  potholes201: {'images': 1, 'pothole': 2}
+  potholes202: {'images': 1, 'pothole': 6}
+  potholes203: {'images': 1, 'pothole': 3}
+  potholes204: {'images': 1, 'pothole': 1}
+  potholes205: {'images': 1, 'pothole': 6}
+  potholes206: {'images': 1, 'pothole': 4}
+  potholes207: {'images': 1, 'pothole': 2}
+  potholes208: {'images': 1, 'pothole': 1}
+  potholes209: {'images': 1, 'pothole': 3}
+  potholes21: {'images': 1, 'pothole': 3}
+  potholes210: {'images': 1, 'pothole': 5}
+  potholes211: {'images': 1, 'pothole': 1}
+  potholes212: {'images': 1, 'pothole': 2}
+  potholes213: {'images': 1, 'pothole': 1}
+  potholes214: {'images': 1, 'pothole': 12}
+  potholes215: {'images': 1, 'pothole': 2}
+  potholes216: {'images': 1, 'pothole': 3}
+  potholes217: {'images': 1, 'pothole': 4}
+  potholes218: {'images': 1, 'pothole': 1}
+  potholes219: {'images': 1, 'pothole': 2}
+  potholes22: {'images': 1, 'pothole': 1}
+  potholes220: {'images': 1, 'pothole': 1}
+  potholes221: {'images': 1, 'pothole': 1}
+  potholes222: {'images': 1, 'pothole': 1}
+  potholes223: {'images': 1, 'pothole': 2}
+  potholes224: {'images': 1, 'pothole': 1}
+  potholes225: {'images': 1, 'pothole': 3}
+  potholes226: {'images': 1, 'pothole': 2}
+  potholes227: {'images': 1, 'pothole': 2}
+  potholes228: {'images': 1, 'pothole': 1}
+  potholes229: {'images': 1, 'pothole': 1}
+  potholes23: {'images': 1, 'pothole': 1}
+  potholes230: {'images': 1, 'pothole': 1}
+  potholes231: {'images': 1, 'pothole': 1}
+  potholes232: {'images': 1, 'pothole': 1}
+  potholes233: {'images': 1, 'pothole': 2}
+  potholes234: {'images': 1, 'pothole': 2}
+  potholes235: {'images': 1, 'pothole': 1}
+  potholes236: {'images': 1, 'pothole': 1}
+  potholes237: {'images': 1, 'pothole': 3}
+  potholes238: {'images': 1, 'pothole': 1}
+  potholes239: {'images': 1, 'pothole': 1}
+  potholes24: {'images': 1, 'pothole': 1}
+  potholes240: {'images': 1, 'pothole': 7}
+  potholes241: {'images': 1, 'pothole': 1}
+  potholes242: {'images': 1, 'pothole': 2}
+  potholes243: {'images': 1, 'pothole': 1}
+  potholes244: {'images': 1, 'pothole': 1}
+  potholes245: {'images': 1, 'pothole': 2}
+  potholes246: {'images': 1, 'pothole': 2}
+  potholes247: {'images': 1, 'pothole': 1}
+  potholes248: {'images': 1, 'pothole': 2}
+  potholes249: {'images': 1, 'pothole': 1}
+  potholes25: {'images': 1, 'pothole': 4}
+  potholes250: {'images': 1, 'pothole': 1}
+  potholes251: {'images': 1, 'pothole': 5}
+  potholes252: {'images': 1, 'pothole': 6}
+  potholes253: {'images': 1, 'pothole': 1}
+  potholes254: {'images': 1, 'pothole': 5}
+  potholes255: {'images': 1, 'pothole': 5}
+  potholes256: {'images': 1, 'pothole': 1}
+  potholes257: {'images': 1, 'pothole': 4}
+  potholes258: {'images': 1, 'pothole': 1}
+  potholes259: {'images': 1, 'pothole': 1}
+  potholes26: {'images': 1, 'pothole': 1}
+  potholes260: {'images': 1, 'pothole': 1}
+  potholes261: {'images': 1, 'pothole': 4}
+  potholes262: {'images': 1, 'pothole': 1}
+  potholes263: {'images': 1, 'pothole': 1}
+  potholes264: {'images': 1, 'pothole': 1}
+  potholes265: {'images': 1, 'pothole': 2}
+  potholes266: {'images': 1, 'pothole': 4}
+  potholes267: {'images': 1, 'pothole': 1}
+  potholes268: {'images': 1, 'pothole': 2}
+  potholes269: {'images': 1, 'pothole': 3}
+  potholes27: {'images': 1, 'pothole': 1}
+  potholes270: {'images': 1, 'pothole': 5}
+  potholes271: {'images': 1, 'pothole': 1}
+  potholes272: {'images': 1, 'pothole': 1}
+  potholes273: {'images': 1, 'pothole': 1}
+  potholes274: {'images': 1, 'pothole': 3}
+  potholes275: {'images': 1, 'pothole': 1}
+  potholes276: {'images': 1, 'pothole': 1}
+  potholes277: {'images': 1, 'pothole': 17}
+  potholes278: {'images': 1, 'pothole': 1}
+  potholes279: {'images': 1, 'pothole': 1}
+  potholes28: {'images': 1, 'pothole': 2}
+  potholes280: {'images': 1, 'pothole': 2}
+  potholes281: {'images': 1, 'pothole': 3}
+  potholes282: {'images': 1, 'pothole': 1}
+  potholes283: {'images': 1, 'pothole': 1}
+  potholes284: {'images': 1, 'pothole': 2}
+  potholes285: {'images': 1, 'pothole': 1}
+  potholes286: {'images': 1, 'pothole': 1}
+  potholes287: {'images': 1, 'pothole': 1}
+  potholes288: {'images': 1, 'pothole': 1}
+  potholes289: {'images': 1, 'pothole': 1}
+  potholes29: {'images': 1, 'pothole': 3}
+  potholes290: {'images': 1, 'pothole': 1}
+  potholes291: {'images': 1, 'pothole': 1}
+  potholes292: {'images': 1, 'pothole': 1}
+  potholes293: {'images': 1, 'pothole': 1}
+  potholes294: {'images': 1, 'pothole': 18}
+  potholes295: {'images': 1, 'pothole': 3}
+  potholes296: {'images': 1, 'pothole': 2}
+  potholes297: {'images': 1, 'pothole': 2}
+  potholes298: {'images': 1, 'pothole': 1}
+  potholes299: {'images': 1, 'pothole': 2}
+  potholes3: {'images': 1, 'pothole': 2}
+  potholes30: {'images': 1, 'pothole': 2}
+  potholes300: {'images': 1, 'pothole': 2}
+  potholes301: {'images': 1, 'pothole': 5}
+  potholes302: {'images': 1, 'pothole': 3}
+  potholes303: {'images': 1, 'pothole': 2}
+  potholes304: {'images': 1, 'pothole': 1}
+  potholes305: {'images': 1, 'pothole': 1}
+  potholes306: {'images': 1, 'pothole': 1}
+  potholes307: {'images': 1, 'pothole': 1}
+  potholes308: {'images': 1, 'pothole': 1}
+  potholes309: {'images': 1, 'pothole': 4}
+  potholes31: {'images': 1, 'pothole': 4}
+  potholes310: {'images': 1, 'pothole': 5}
+  potholes311: {'images': 1, 'pothole': 1}
+  potholes312: {'images': 1, 'pothole': 1}
+  potholes313: {'images': 1, 'pothole': 3}
+  potholes314: {'images': 1, 'pothole': 5}
+  potholes315: {'images': 1, 'pothole': 1}
+  potholes316: {'images': 1, 'pothole': 2}
+  potholes317: {'images': 1, 'pothole': 10}
+  potholes318: {'images': 1, 'pothole': 2}
+  potholes319: {'images': 1, 'pothole': 1}
+  potholes32: {'images': 1, 'pothole': 2}
+  potholes320: {'images': 1, 'pothole': 3}
+  potholes321: {'images': 1, 'pothole': 7}
+  potholes322: {'images': 1, 'pothole': 2}
+  potholes323: {'images': 1, 'pothole': 2}
+  potholes324: {'images': 1, 'pothole': 1}
+  potholes325: {'images': 1, 'pothole': 1}
+  potholes326: {'images': 1, 'pothole': 1}
+  potholes327: {'images': 1, 'pothole': 1}
+  potholes328: {'images': 1, 'pothole': 1}
+  potholes329: {'images': 1, 'pothole': 4}
+  potholes33: {'images': 1, 'pothole': 2}
+  potholes330: {'images': 1, 'pothole': 5}
+  potholes331: {'images': 1, 'pothole': 1}
+  potholes332: {'images': 1, 'pothole': 3}
+  potholes333: {'images': 1, 'pothole': 1}
+  potholes334: {'images': 1, 'pothole': 4}
+  potholes335: {'images': 1, 'pothole': 2}
+  potholes336: {'images': 1, 'pothole': 3}
+  potholes337: {'images': 1, 'pothole': 1}
+  potholes338: {'images': 1, 'pothole': 4}
+  potholes339: {'images': 1, 'pothole': 2}
+  potholes34: {'images': 1, 'pothole': 2}
+  potholes340: {'images': 1, 'pothole': 1}
+  potholes341: {'images': 1, 'pothole': 1}
+  potholes342: {'images': 1, 'pothole': 1}
+  potholes343: {'images': 1, 'pothole': 3}
+  potholes344: {'images': 1, 'pothole': 2}
+  potholes345: {'images': 1, 'pothole': 4}
+  potholes346: {'images': 1, 'pothole': 9}
+  potholes347: {'images': 1, 'pothole': 1}
+  potholes348: {'images': 1, 'pothole': 1}
+  potholes349: {'images': 1, 'pothole': 1}
+  potholes35: {'images': 1, 'pothole': 2}
+  potholes350: {'images': 1, 'pothole': 5}
+  potholes351: {'images': 1, 'pothole': 2}
+  potholes352: {'images': 1, 'pothole': 1}
+  potholes353: {'images': 1, 'pothole': 3}
+  potholes354: {'images': 1, 'pothole': 3}
+  potholes355: {'images': 1, 'pothole': 2}
+  potholes356: {'images': 1, 'pothole': 2}
+  potholes357: {'images': 1, 'pothole': 1}
+  potholes358: {'images': 1, 'pothole': 1}
+  potholes359: {'images': 1, 'pothole': 1}
+  potholes36: {'images': 1, 'pothole': 1}
+  potholes360: {'images': 1, 'pothole': 2}
+  potholes361: {'images': 1, 'pothole': 1}
+  potholes362: {'images': 1, 'pothole': 8}
+  potholes363: {'images': 1, 'pothole': 1}
+  potholes364: {'images': 1, 'pothole': 3}
+  potholes365: {'images': 1, 'pothole': 1}
+  potholes366: {'images': 1, 'pothole': 4}
+  potholes367: {'images': 1, 'pothole': 3}
+  potholes368: {'images': 1, 'pothole': 13}
+  potholes369: {'images': 1, 'pothole': 3}
+  potholes37: {'images': 1, 'pothole': 2}
+  potholes370: {'images': 1, 'pothole': 5}
+  potholes371: {'images': 1, 'pothole': 6}
+  potholes372: {'images': 1, 'pothole': 1}
+  potholes373: {'images': 1, 'pothole': 1}
+  potholes374: {'images': 1, 'pothole': 1}
+  potholes375: {'images': 1, 'pothole': 1}
+  potholes376: {'images': 1, 'pothole': 2}
+  potholes377: {'images': 1, 'pothole': 1}
+  potholes378: {'images': 1, 'pothole': 1}
+  potholes379: {'images': 1, 'pothole': 1}
+  potholes38: {'images': 1, 'pothole': 2}
+  potholes380: {'images': 1, 'pothole': 3}
+  potholes381: {'images': 1, 'pothole': 1}
+  potholes382: {'images': 1, 'pothole': 3}
+  potholes383: {'images': 1, 'pothole': 2}
+  potholes384: {'images': 1, 'pothole': 2}
+  potholes385: {'images': 1, 'pothole': 2}
+  potholes386: {'images': 1, 'pothole': 2}
+  potholes387: {'images': 1, 'pothole': 1}
+  potholes388: {'images': 1, 'pothole': 1}
+  potholes389: {'images': 1, 'pothole': 2}
+  potholes39: {'images': 1, 'pothole': 14}
+  potholes390: {'images': 1, 'pothole': 3}
+  potholes391: {'images': 1, 'pothole': 4}
+  potholes392: {'images': 1, 'pothole': 1}
+  potholes393: {'images': 1, 'pothole': 3}
+  potholes394: {'images': 1, 'pothole': 5}
+  potholes395: {'images': 1, 'pothole': 1}
+  potholes396: {'images': 1, 'pothole': 10}
+  potholes397: {'images': 1, 'pothole': 4}
+  potholes398: {'images': 1, 'pothole': 1}
+  potholes399: {'images': 1, 'pothole': 2}
+  potholes4: {'images': 1, 'pothole': 2}
+  potholes40: {'images': 1, 'pothole': 1}
+  potholes400: {'images': 1, 'pothole': 4}
+  potholes401: {'images': 1, 'pothole': 1}
+  potholes402: {'images': 1, 'pothole': 2}
+  potholes403: {'images': 1, 'pothole': 3}
+  potholes404: {'images': 1, 'pothole': 1}
+  potholes405: {'images': 1, 'pothole': 2}
+  potholes406: {'images': 1, 'pothole': 1}
+  potholes407: {'images': 1, 'pothole': 1}
+  potholes408: {'images': 1, 'pothole': 1}
+  potholes409: {'images': 1, 'pothole': 4}
+  potholes41: {'images': 1, 'pothole': 1}
+  potholes410: {'images': 1, 'pothole': 2}
+  potholes411: {'images': 1, 'pothole': 8}
+  potholes412: {'images': 1, 'pothole': 1}
+  potholes413: {'images': 1, 'pothole': 1}
+  potholes414: {'images': 1, 'pothole': 1}
+  potholes415: {'images': 1, 'pothole': 5}
+  potholes416: {'images': 1, 'pothole': 1}
+  potholes417: {'images': 1, 'pothole': 5}
+  potholes418: {'images': 1, 'pothole': 4}
+  potholes419: {'images': 1, 'pothole': 1}
+  potholes42: {'images': 1, 'pothole': 9}
+  potholes420: {'images': 1, 'pothole': 1}
+  potholes421: {'images': 1, 'pothole': 1}
+  potholes422: {'images': 1, 'pothole': 1}
+  potholes423: {'images': 1, 'pothole': 1}
+  potholes424: {'images': 1, 'pothole': 1}
+  potholes425: {'images': 1, 'pothole': 3}
+  potholes426: {'images': 1, 'pothole': 1}
+  potholes427: {'images': 1, 'pothole': 7}
+  potholes428: {'images': 1, 'pothole': 2}
+  potholes429: {'images': 1, 'pothole': 1}
+  potholes43: {'images': 1, 'pothole': 2}
+  potholes430: {'images': 1, 'pothole': 2}
+  potholes431: {'images': 1, 'pothole': 4}
+  potholes432: {'images': 1, 'pothole': 1}
+  potholes433: {'images': 1, 'pothole': 8}
+  potholes434: {'images': 1, 'pothole': 9}
+  potholes435: {'images': 1, 'pothole': 2}
+  potholes436: {'images': 1, 'pothole': 1}
+  potholes437: {'images': 1, 'pothole': 4}
+  potholes438: {'images': 1, 'pothole': 1}
+  potholes439: {'images': 1, 'pothole': 2}
+  potholes44: {'images': 1, 'pothole': 1}
+  potholes440: {'images': 1, 'pothole': 3}
+  potholes441: {'images': 1, 'pothole': 3}
+  potholes442: {'images': 1, 'pothole': 1}
+  potholes443: {'images': 1, 'pothole': 3}
+  potholes444: {'images': 1, 'pothole': 4}
+  potholes445: {'images': 1, 'pothole': 6}
+  potholes446: {'images': 1, 'pothole': 5}
+  potholes447: {'images': 1, 'pothole': 1}
+  potholes448: {'images': 1, 'pothole': 2}
+  potholes449: {'images': 1, 'pothole': 5}
+  potholes45: {'images': 1, 'pothole': 5}
+  potholes450: {'images': 1, 'pothole': 1}
+  potholes451: {'images': 1, 'pothole': 3}
+  potholes452: {'images': 1, 'pothole': 3}
+  potholes453: {'images': 1, 'pothole': 1}
+  potholes454: {'images': 1, 'pothole': 8}
+  potholes455: {'images': 1, 'pothole': 1}
+  potholes456: {'images': 1, 'pothole': 2}
+  potholes457: {'images': 1, 'pothole': 16}
+  potholes458: {'images': 1, 'pothole': 2}
+  potholes459: {'images': 1, 'pothole': 3}
+  potholes46: {'images': 1, 'pothole': 2}
+  potholes460: {'images': 1, 'pothole': 2}
+  potholes461: {'images': 1, 'pothole': 1}
+  potholes462: {'images': 1, 'pothole': 1}
+  potholes463: {'images': 1, 'pothole': 5}
+  potholes464: {'images': 1, 'pothole': 1}
+  potholes465: {'images': 1, 'pothole': 1}
+  potholes466: {'images': 1, 'pothole': 1}
+  potholes467: {'images': 1, 'pothole': 5}
+  potholes468: {'images': 1, 'pothole': 8}
+  potholes469: {'images': 1, 'pothole': 2}
+  potholes47: {'images': 1, 'pothole': 3}
+  potholes470: {'images': 1, 'pothole': 1}
+  potholes471: {'images': 1, 'pothole': 1}
+  potholes472: {'images': 1, 'pothole': 1}
+  potholes473: {'images': 1, 'pothole': 6}
+  potholes474: {'images': 1, 'pothole': 3}
+  potholes475: {'images': 1, 'pothole': 1}
+  potholes476: {'images': 1, 'pothole': 2}
+  potholes477: {'images': 1, 'pothole': 4}
+  potholes478: {'images': 1, 'pothole': 2}
+  potholes479: {'images': 1, 'pothole': 1}
+  potholes48: {'images': 1, 'pothole': 1}
+  potholes480: {'images': 1, 'pothole': 2}
+  potholes481: {'images': 1, 'pothole': 2}
+  potholes482: {'images': 1, 'pothole': 2}
+  potholes483: {'images': 1, 'pothole': 11}
+  potholes484: {'images': 1, 'pothole': 2}
+  potholes485: {'images': 1, 'pothole': 2}
+  potholes486: {'images': 1, 'pothole': 6}
+  potholes487: {'images': 1, 'pothole': 1}
+  potholes488: {'images': 1, 'pothole': 1}
+  potholes489: {'images': 1, 'pothole': 5}
+  potholes49: {'images': 1, 'pothole': 2}
+  potholes490: {'images': 1, 'pothole': 1}
+  potholes491: {'images': 1, 'pothole': 2}
+  potholes492: {'images': 1, 'pothole': 1}
+  potholes493: {'images': 1, 'pothole': 2}
+  potholes494: {'images': 1, 'pothole': 1}
+  potholes495: {'images': 1, 'pothole': 1}
+  potholes496: {'images': 1, 'pothole': 1}
+  potholes497: {'images': 1, 'pothole': 1}
+  potholes498: {'images': 1, 'pothole': 5}
+  potholes499: {'images': 1, 'pothole': 7}
+  potholes5: {'images': 1, 'pothole': 1}
+  potholes50: {'images': 1, 'pothole': 1}
+  potholes500: {'images': 1, 'pothole': 1}
+  potholes501: {'images': 1, 'pothole': 5}
+  potholes502: {'images': 1, 'pothole': 2}
+  potholes503: {'images': 1, 'pothole': 2}
+  potholes504: {'images': 1, 'pothole': 1}
+  potholes505: {'images': 1, 'pothole': 13}
+  potholes506: {'images': 1, 'pothole': 5}
+  potholes507: {'images': 1, 'pothole': 1}
+  potholes508: {'images': 1, 'pothole': 2}
+  potholes509: {'images': 1, 'pothole': 3}
+  potholes51: {'images': 1, 'pothole': 1}
+  potholes510: {'images': 1, 'pothole': 1}
+  potholes511: {'images': 1, 'pothole': 4}
+  potholes512: {'images': 1, 'pothole': 1}
+  potholes513: {'images': 1, 'pothole': 1}
+  potholes514: {'images': 1, 'pothole': 2}
+  potholes515: {'images': 1, 'pothole': 1}
+  potholes516: {'images': 1, 'pothole': 2}
+  potholes517: {'images': 1, 'pothole': 3}
+  potholes518: {'images': 1, 'pothole': 3}
+  potholes519: {'images': 1, 'pothole': 6}
+  potholes52: {'images': 1, 'pothole': 1}
+  potholes520: {'images': 1, 'pothole': 19}
+  potholes521: {'images': 1, 'pothole': 1}
+  potholes522: {'images': 1, 'pothole': 2}
+  potholes523: {'images': 1, 'pothole': 2}
+  potholes524: {'images': 1, 'pothole': 1}
+  potholes525: {'images': 1, 'pothole': 4}
+  potholes526: {'images': 1, 'pothole': 7}
+  potholes527: {'images': 1, 'pothole': 2}
+  potholes528: {'images': 1, 'pothole': 2}
+  potholes529: {'images': 1, 'pothole': 1}
+  potholes53: {'images': 1, 'pothole': 5}
+  potholes530: {'images': 1, 'pothole': 1}
+  potholes531: {'images': 1, 'pothole': 2}
+  potholes532: {'images': 1, 'pothole': 1}
+  potholes533: {'images': 1, 'pothole': 1}
+  potholes534: {'images': 1, 'pothole': 7}
+  potholes535: {'images': 1, 'pothole': 8}
+  potholes536: {'images': 1, 'pothole': 2}
+  potholes537: {'images': 1, 'pothole': 3}
+  potholes538: {'images': 1, 'pothole': 5}
+  potholes539: {'images': 1, 'pothole': 1}
+  potholes54: {'images': 1, 'pothole': 1}
+  potholes540: {'images': 1, 'pothole': 1}
+  potholes541: {'images': 1, 'pothole': 2}
+  potholes542: {'images': 1, 'pothole': 4}
+  potholes543: {'images': 1, 'pothole': 1}
+  potholes544: {'images': 1, 'pothole': 3}
+  potholes545: {'images': 1, 'pothole': 3}
+  potholes546: {'images': 1, 'pothole': 1}
+  potholes547: {'images': 1, 'pothole': 4}
+  potholes548: {'images': 1, 'pothole': 1}
+  potholes549: {'images': 1, 'pothole': 3}
+  potholes55: {'images': 1, 'pothole': 1}
+  potholes550: {'images': 1, 'pothole': 2}
+  potholes551: {'images': 1, 'pothole': 1}
+  potholes552: {'images': 1, 'pothole': 5}
+  potholes553: {'images': 1, 'pothole': 1}
+  potholes554: {'images': 1, 'pothole': 1}
+  potholes555: {'images': 1, 'pothole': 1}
+  potholes556: {'images': 1, 'pothole': 2}
+  potholes557: {'images': 1, 'pothole': 2}
+  potholes558: {'images': 1, 'pothole': 1}
+  potholes559: {'images': 1, 'pothole': 2}
+  potholes56: {'images': 1, 'pothole': 3}
+  potholes560: {'images': 1, 'pothole': 1}
+  potholes561: {'images': 1, 'pothole': 2}
+  potholes562: {'images': 1, 'pothole': 2}
+  potholes563: {'images': 1, 'pothole': 2}
+  potholes564: {'images': 1, 'pothole': 1}
+  potholes565: {'images': 1, 'pothole': 1}
+  potholes566: {'images': 1, 'pothole': 2}
+  potholes567: {'images': 1, 'pothole': 1}
+  potholes568: {'images': 1, 'pothole': 1}
+  potholes569: {'images': 1, 'pothole': 1}
+  potholes57: {'images': 1, 'pothole': 1}
+  potholes570: {'images': 1, 'pothole': 3}
+  potholes571: {'images': 1, 'pothole': 1}
+  potholes572: {'images': 1, 'pothole': 1}
+  potholes573: {'images': 1, 'pothole': 2}
+  potholes574: {'images': 1, 'pothole': 7}
+  potholes575: {'images': 1, 'pothole': 5}
+  potholes576: {'images': 1, 'pothole': 2}
+  potholes577: {'images': 1, 'pothole': 1}
+  potholes578: {'images': 1, 'pothole': 3}
+  potholes579: {'images': 1, 'pothole': 3}
+  potholes58: {'images': 1, 'pothole': 3}
+  potholes580: {'images': 1, 'pothole': 3}
+  potholes581: {'images': 1, 'pothole': 1}
+  potholes582: {'images': 1, 'pothole': 1}
+  potholes583: {'images': 1, 'pothole': 3}
+  potholes584: {'images': 1, 'pothole': 4}
+  potholes585: {'images': 1, 'pothole': 2}
+  potholes586: {'images': 1, 'pothole': 2}
+  potholes587: {'images': 1, 'pothole': 1}
+  potholes588: {'images': 1, 'pothole': 2}
+  potholes589: {'images': 1, 'pothole': 1}
+  potholes59: {'images': 1, 'pothole': 1}
+  potholes590: {'images': 1, 'pothole': 4}
+  potholes591: {'images': 1, 'pothole': 2}
+  potholes592: {'images': 1, 'pothole': 1}
+  potholes593: {'images': 1, 'pothole': 1}
+  potholes594: {'images': 1, 'pothole': 1}
+  potholes595: {'images': 1, 'pothole': 1}
+  potholes596: {'images': 1, 'pothole': 2}
+  potholes597: {'images': 1, 'pothole': 7}
+  potholes598: {'images': 1, 'pothole': 1}
+  potholes599: {'images': 1, 'pothole': 3}
+  potholes6: {'images': 1, 'pothole': 1}
+  potholes60: {'images': 1, 'pothole': 1}
+  potholes600: {'images': 1, 'pothole': 2}
+  potholes601: {'images': 1, 'pothole': 2}
+  potholes602: {'images': 1, 'pothole': 1}
+  potholes603: {'images': 1, 'pothole': 1}
+  potholes604: {'images': 1, 'pothole': 2}
+  potholes605: {'images': 1, 'pothole': 1}
+  potholes606: {'images': 1, 'pothole': 3}
+  potholes607: {'images': 1, 'pothole': 2}
+  potholes608: {'images': 1, 'pothole': 1}
+  potholes609: {'images': 1, 'pothole': 2}
+  potholes61: {'images': 1, 'pothole': 1}
+  potholes610: {'images': 1, 'pothole': 7}
+  potholes611: {'images': 1, 'pothole': 3}
+  potholes612: {'images': 1, 'pothole': 1}
+  potholes613: {'images': 1, 'pothole': 2}
+  potholes614: {'images': 1, 'pothole': 1}
+  potholes615: {'images': 1, 'pothole': 3}
+  potholes616: {'images': 1, 'pothole': 2}
+  potholes617: {'images': 1, 'pothole': 2}
+  potholes618: {'images': 1, 'pothole': 5}
+  potholes619: {'images': 1, 'pothole': 3}
+  potholes62: {'images': 1, 'pothole': 2}
+  potholes620: {'images': 1, 'pothole': 1}
+  potholes621: {'images': 1, 'pothole': 17}
+  potholes622: {'images': 1, 'pothole': 1}
+  potholes623: {'images': 1, 'pothole': 2}
+  potholes624: {'images': 1, 'pothole': 4}
+  potholes625: {'images': 1, 'pothole': 3}
+  potholes626: {'images': 1, 'pothole': 2}
+  potholes627: {'images': 1, 'pothole': 1}
+  potholes628: {'images': 1, 'pothole': 2}
+  potholes629: {'images': 1, 'pothole': 7}
+  potholes63: {'images': 1, 'pothole': 6}
+  potholes630: {'images': 1, 'pothole': 11}
+  potholes631: {'images': 1, 'pothole': 1}
+  potholes632: {'images': 1, 'pothole': 2}
+  potholes633: {'images': 1, 'pothole': 2}
+  potholes634: {'images': 1, 'pothole': 7}
+  potholes635: {'images': 1, 'pothole': 3}
+  potholes636: {'images': 1, 'pothole': 5}
+  potholes637: {'images': 1, 'pothole': 2}
+  potholes638: {'images': 1, 'pothole': 1}
+  potholes639: {'images': 1, 'pothole': 1}
+  potholes64: {'images': 1, 'pothole': 1}
+  potholes640: {'images': 1, 'pothole': 5}
+  potholes641: {'images': 1, 'pothole': 2}
+  potholes642: {'images': 1, 'pothole': 1}
+  potholes643: {'images': 1, 'pothole': 3}
+  potholes644: {'images': 1, 'pothole': 1}
+  potholes645: {'images': 1, 'pothole': 1}
+  potholes646: {'images': 1, 'pothole': 1}
+  potholes647: {'images': 1, 'pothole': 3}
+  potholes648: {'images': 1, 'pothole': 2}
+  potholes649: {'images': 1, 'pothole': 3}
+  potholes65: {'images': 1, 'pothole': 1}
+  potholes650: {'images': 1, 'pothole': 3}
+  potholes651: {'images': 1, 'pothole': 1}
+  potholes652: {'images': 1, 'pothole': 1}
+  potholes653: {'images': 1, 'pothole': 1}
+  potholes654: {'images': 1, 'pothole': 1}
+  potholes655: {'images': 1, 'pothole': 1}
+  potholes656: {'images': 1, 'pothole': 6}
+  potholes657: {'images': 1, 'pothole': 1}
+  potholes658: {'images': 1, 'pothole': 3}
+  potholes659: {'images': 1, 'pothole': 2}
+  potholes66: {'images': 1, 'pothole': 1}
+  potholes660: {'images': 1, 'pothole': 1}
+  potholes661: {'images': 1, 'pothole': 2}
+  potholes662: {'images': 1, 'pothole': 1}
+  potholes663: {'images': 1, 'pothole': 2}
+  potholes664: {'images': 1, 'pothole': 1}
+  potholes67: {'images': 1, 'pothole': 1}
+  potholes68: {'images': 1, 'pothole': 14}
+  potholes69: {'images': 1, 'pothole': 2}
+  potholes7: {'images': 1, 'pothole': 1}
+  potholes70: {'images': 1, 'pothole': 1}
+  potholes71: {'images': 1, 'pothole': 1}
+  potholes72: {'images': 1, 'pothole': 2}
+  potholes73: {'images': 1, 'pothole': 5}
+  potholes74: {'images': 1, 'pothole': 2}
+  potholes75: {'images': 1, 'pothole': 5}
+  potholes76: {'images': 1, 'pothole': 2}
+  potholes77: {'images': 1, 'pothole': 2}
+  potholes78: {'images': 1, 'pothole': 1}
+  potholes79: {'images': 1, 'pothole': 2}
+  potholes8: {'images': 1, 'pothole': 3}
+  potholes80: {'images': 1, 'pothole': 1}
+  potholes81: {'images': 1, 'pothole': 9}
+  potholes82: {'images': 1, 'pothole': 4}
+  potholes83: {'images': 1, 'pothole': 2}
+  potholes84: {'images': 1, 'pothole': 3}
+  potholes85: {'images': 1, 'pothole': 7}
+  potholes86: {'images': 1, 'pothole': 5}
+  potholes87: {'images': 1, 'pothole': 5}
+  potholes88: {'images': 1, 'pothole': 3}
+  potholes89: {'images': 1, 'pothole': 1}
+  potholes9: {'images': 1, 'pothole': 1}
+  potholes90: {'images': 1, 'pothole': 2}
+  potholes91: {'images': 1, 'pothole': 2}
+  potholes92: {'images': 1, 'pothole': 1}
+  potholes93: {'images': 1, 'pothole': 1}
+  potholes94: {'images': 1, 'pothole': 2}
+  potholes95: {'images': 1, 'pothole': 4}
+  potholes96: {'images': 1, 'pothole': 1}
+  potholes97: {'images': 1, 'pothole': 4}
+  potholes98: {'images': 1, 'pothole': 1}
+  potholes99: {'images': 1, 'pothole': 5}
+
+--- Example annotation (first with objects) ---
+Top-level keys: ['description', 'tags', 'size', 'objects']
+{
+  "description": "",
+  "tags": [],
+  "size": {
+    "height": 300,
+    "width": 450
+  },
+  "objects": [
+    {
+      "id": 70800558,
+      "classId": 6478869,
+      "description": "",
+      "geometryType": "rectangle",
+      "labelerLogin": "inbox@datasetninja.com",
+      "createdAt": "2023-10-12T03:26:39.641Z",
+      "updatedAt": "2023-10-12T03:26:39.641Z",
+      "tags": [],
+      "classTitle": "pothole",
+      "points": {
+        "exterior": [
+          [
+            141,
+            233
+          ],
+          [
+            203,
+            262
+          ]
+        ],
+        "interior": []
+      }
+    },
+    {
+      "id": 70800557,
+      "classId": 6478869,
+      "description": "",
+      "geometryType": "rectangle",
+      "labelerLogin": "inbox@datasetninja.com",
+      "createdAt": "2023-10-12T03:26:39.640Z",
+      "updatedAt": "2023-10-12T03:26:39.640Z",
+      "tags": [],
+      "classTitle": "pothole",
+      "points": {
+        "exterior": [
+          [
+            201,
+            219
+          ],
+          [
+            238,
+            236
+          ]
+        ],
+        "interior": []
+      }
+    },
+    {
+      "id": 70800556,
+      "classId": 6478869,
+      "description": "",
+      "geometryType": "rectangle",
+      "labelerLogin": "inbox@datasetninja.com",
+      "createdAt": "2023-10-12T03:26:39.639Z",
+      "updatedAt": "2023-10-12T03:26:39.639Z",
+      "tags": [],
+      "classTitle": "pothole",
+      "points": {
+        "exterior": [
+          [
+            87,
+            172
+          ],
+          [
+            147,
+            196
+          ]
+        ],
+        "interior": []
+      }
+    },
+    {
+      "id": 70800555,
+      "classId": 6478869,
+      "description": "",
+      "geometryType": "rectangle",
+      "labelerLogin": "inbox@datasetninja.com",
+      "
+
+Size check on 20 random images: 0 mismatches

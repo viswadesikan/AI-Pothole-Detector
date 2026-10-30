@@ -1,0 +1,7 @@
+--- Split summary ---
+Seed: 42   Hash threshold: 6
+Images: 665   Clusters: 665   Clusters with >1 image: 0   Largest cluster: 1
+
+train:  465 images   1214 boxes  2.61 boxes/image
+val  :  100 images    288 boxes  2.88 boxes/image
+test :  100 images    237 boxes  2.37 boxes/image

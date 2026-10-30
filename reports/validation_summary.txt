@@ -1,0 +1,11 @@
+--- Validation summary ---
+data.yaml: nc=1 names={0: 'pothole'}
+train:  465 images   465 labels   1214 boxes  2.61 boxes/image  median box w/h 0.195/0.120  small boxes 34 (3%)
+val  :  100 images   100 labels    288 boxes  2.88 boxes/image  median box w/h 0.174/0.113  small boxes 7 (2%)
+test :  100 images   100 labels    237 boxes  2.37 boxes/image  median box w/h 0.193/0.120  small boxes 7 (3%)
+Filename overlap train/val: 0
+Filename overlap train/test: 0
+Filename overlap val/test: 0
+
+RESULT: PASS - no problems found
+Sample images: reports/samples/ (see sheet_train.jpg, sheet_val.jpg, sheet_test.jpg)
