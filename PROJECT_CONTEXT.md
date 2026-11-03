@@ -38,7 +38,7 @@ Plan has 14 steps (0-13). Done: 0, 1, 2. In progress: 3 (evaluation). Next: 4 (o
 - validate_dataset.py  format checks + sample images/contact sheets in reports/samples
 - make_report.py       builds reports/dataset_report.md
 - train_baseline.py    args: --model --scratch --epochs --imgsz --batch --workers --patience --name --smoke
-                       (planned edits: add --seed; pass project/name to the .val() call to stop stray runs/ folders)
+                       (includes --seed; .val() output is routed under models/runs)
 - analyze_errors.py    error analysis + confidence sweep on VAL; test split blocked without --final
 - evaluate_test.py     final TEST evaluation; run ONCE on the chosen model only
 
@@ -53,12 +53,17 @@ P/R printed by Ultralytics are at one internal threshold, so compare mAP or use 
 (best epoch >= 71), so it may be undertrained. Test split has NOT been used yet.
 Weights: models/runs/<run>/weights/best.pt
 
+## Latest continuation (2026-11-04)
+- The optional 300-epoch baseline run stopped after epoch 162. Its `last.pt` had `epoch=-1` and no optimizer state, so Ultralytics could not resume it exactly.
+- A separate fine-tune initialized from that checkpoint ran 70 epochs and early-stopped (best epoch 20): P=0.824, R=0.722, mAP50=0.794, mAP50-95=0.512 on validation. It did not beat the original baseline. See `reports/experiments.md`.
+- Keep the original baseline candidate; do not describe the fine-tune as a 300-epoch run or as an exact resume.
+
 ## Open items (in order)
-1. Visually check reports/samples/sheet_*.jpg (boxes on potholes?) and read data/raw/LICENSE.md.
-2. Make sure everything is committed to Git; fill reports/experiments.md.
-3. Run analyze_errors.py on baseline (640) and img800 (--imgsz 800); compare at the same thresholds.
-4. Seed run: train_baseline.py --seed 1 --name baseline_yolo26n_seed1 (measures run-to-run noise).
-5. Optional: --epochs 300 --patience 50. Then STOP tuning; pick the simplest model tied for best.
+1. Done: visually review reports/samples/sheet_*.jpg and read data/raw/LICENSE.md (DbCL v1.0). Add a proper dataset citation to the project README before sharing.
+2. Update and review reports/experiments.md, then commit the completed evaluation task.
+3. Done: analyze_errors.py and confidence sweeps exist for baseline (640) and img800 (800) at the same thresholds.
+4. Check and record the existing seed runs (`baseline_yolo26n_seed1` and `baseline_yolo26n_seed1-2`) before deciding whether another seed is needed.
+5. The 300-epoch run cannot be resumed because optimizer state is missing. Its fine-tune did not improve the baseline; STOP tuning and keep the original baseline candidate.
 6. Run evaluate_test.py ONCE; copy weights to models/roadguard_best.pt; record the chosen confidence threshold.
 7. Step 4: collect own dashcam footage + negative (no-pothole) images, label a small set, test the model on it.
 8. Steps 5-13: video inference, tracking/dedup, warning UI, GPS, SQLite events, Leaflet map, reporting adapter
