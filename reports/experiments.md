@@ -8,6 +8,7 @@ All metrics below are from the validation split. The 100-image validation set is
 | 2 | scratch_yolo26n | yolo26n | random initialization | 200 (best 170) | 640 | 16 | 0.818 | 0.687 | 0.771 | 0.442 | Validation split; no pretrained weights. |
 | 3 | yolo26n_img800 | yolo26n | pretrained | 80 (best 50) | 800 | 8 | 0.770 | 0.819 | 0.837 | 0.543 | Validation split; higher resolution and smaller batch together, so their effects are confounded. |
 | 4 | baseline_yolo26n_finetune_from162 | yolo26n | fine-tuned from the epoch-162 checkpoint | 70 (best epoch 20) | 640 | 16 | 0.824 | 0.722 | 0.794 | 0.512 | Validation split; original checkpoint lacked optimizer state, so this was a new AdamW fine-tuning run, not an exact resume. Stopped by patience 50. Lower mAP than the baseline. |
+| 5 | baseline_yolo26n_seed1 | yolo26n | pretrained, seed 1 | 100 (best 70) | 640 | 16 | 0.831 | 0.767 | 0.830 | 0.535 | Validation split. `baseline_yolo26n_seed1-2` used the same seed/settings and has identical best-model tensors, so it is a duplicate, not an independent repeat. |
 
 ## Validation threshold analysis
 
@@ -15,4 +16,4 @@ All metrics below are from the validation split. The 100-image validation set is
 
 ## Selection
 
-The 800px run has the highest recorded mAP50 and mAP50-95, but its different batch size and image size prevent attributing the change to resolution alone. The 640px baseline is the simpler comparison point. The fine-tune from the interrupted 300-epoch run did not improve either mAP measure. Keep the test split untouched until the evaluation script and final candidate are ready; evaluate it once.
+The 800px run has the highest recorded mAP50 and mAP50-95, but its different batch size and image size prevent attributing the change to resolution alone. The 640px baseline is the simpler comparison point. The seed-1 run is within the stated validation noise of the seed-0 baseline. The fine-tune from the interrupted 300-epoch run did not improve either mAP measure. Keep the test split untouched until the evaluation script and final candidate are ready; evaluate it once.

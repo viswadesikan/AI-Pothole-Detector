@@ -48,6 +48,8 @@ Plan has 14 steps (0-13). Done: 0, 1, 2. In progress: 3 (evaluation). Next: 4 (o
 | 1 | baseline_yolo26n | pretrained | 100 | 640 | 16 | 0.864 | 0.729 | 0.825 | 0.538 |
 | 2 | scratch_yolo26n | random init | 200 (170) | 640 | 16 | 0.818 | 0.687 | 0.771 | 0.442 |
 | 3 | yolo26n_img800 | pretrained | 80 (50) | 800 | 8 | 0.770 | 0.819 | 0.837 | 0.543 |
+| 4 | baseline_yolo26n_finetune_from162 | from epoch-162 checkpoint | 70 (best 20) | 640 | 16 | 0.824 | 0.722 | 0.794 | 0.512 |
+| 5 | baseline_yolo26n_seed1 | pretrained, seed 1 | 100 (best 70) | 640 | 16 | 0.831 | 0.767 | 0.830 | 0.535 |
 Notes: pretrained beats scratch (esp. mAP50-95). 800 px is a tie with 640 within noise (batch also changed).
 P/R printed by Ultralytics are at one internal threshold, so compare mAP or use the sweep. Baseline ran all 100 epochs
 (best epoch >= 71), so it may be undertrained. Test split has NOT been used yet.
@@ -57,12 +59,13 @@ Weights: models/runs/<run>/weights/best.pt
 - The optional 300-epoch baseline run stopped after epoch 162. Its `last.pt` had `epoch=-1` and no optimizer state, so Ultralytics could not resume it exactly.
 - A separate fine-tune initialized from that checkpoint ran 70 epochs and early-stopped (best epoch 20): P=0.824, R=0.722, mAP50=0.794, mAP50-95=0.512 on validation. It did not beat the original baseline. See `reports/experiments.md`.
 - Keep the original baseline candidate; do not describe the fine-tune as a 300-epoch run or as an exact resume.
+- The seed-1 run reached mAP50=0.830 and mAP50-95=0.535 (best epoch 70), close to the baseline. The `baseline_yolo26n_seed1-2` folder has identical best-model tensors and is not an independent repeat.
 
 ## Open items (in order)
 1. Done: visually review reports/samples/sheet_*.jpg and read data/raw/LICENSE.md (DbCL v1.0). Add a proper dataset citation to the project README before sharing.
 2. Update and review reports/experiments.md, then commit the completed evaluation task.
 3. Done: analyze_errors.py and confidence sweeps exist for baseline (640) and img800 (800) at the same thresholds.
-4. Check and record the existing seed runs (`baseline_yolo26n_seed1` and `baseline_yolo26n_seed1-2`) before deciding whether another seed is needed.
+4. Done: inspected and recorded the existing seed runs; `baseline_yolo26n_seed1-2` duplicates the seed-1 weights, so it does not add another independent seed.
 5. The 300-epoch run cannot be resumed because optimizer state is missing. Its fine-tune did not improve the baseline; STOP tuning and keep the original baseline candidate.
 6. Run evaluate_test.py ONCE; copy weights to models/roadguard_best.pt; record the chosen confidence threshold.
 7. Step 4: collect own dashcam footage + negative (no-pothole) images, label a small set, test the model on it.
