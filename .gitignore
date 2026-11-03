@@ -2,3 +2,5 @@ data/
 pothole-detection-DatasetNinja.tar
 .venv
 models/runs/
+__pycache__/
+*.py[cod]

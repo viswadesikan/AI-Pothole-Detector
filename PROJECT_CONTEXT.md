@@ -61,13 +61,19 @@ Weights: models/runs/<run>/weights/best.pt
 - Keep the original baseline candidate; do not describe the fine-tune as a 300-epoch run or as an exact resume.
 - The seed-1 run reached mAP50=0.830 and mAP50-95=0.535 (best epoch 70), close to the baseline. The `baseline_yolo26n_seed1-2` folder has identical best-model tensors and is not an independent repeat.
 
+## Final test evaluation (2026-11-04)
+- `src/evaluate_test.py` evaluated the original 640px baseline once on the 100-image TEST split.
+- Test: mAP50=0.798, mAP50-95=0.518. At the validation-selected confidence 0.40 and IoU 0.50: precision=0.829, recall=0.717, F1=0.769 (TP=170, FP=35, FN=67).
+- Results are in `reports/final_test_evaluation/summary.md`; final weights are copied to `models/roadguard_best.pt`.
+- Do not use TEST metrics to tune the model or threshold, and do not run the evaluation again.
+
 ## Open items (in order)
 1. Done: visually review reports/samples/sheet_*.jpg and read data/raw/LICENSE.md (DbCL v1.0). Add a proper dataset citation to the project README before sharing.
-2. Update and review reports/experiments.md, then commit the completed evaluation task.
+2. Done: reviewed and committed the experiment log and final test evaluation records.
 3. Done: analyze_errors.py and confidence sweeps exist for baseline (640) and img800 (800) at the same thresholds.
 4. Done: inspected and recorded the existing seed runs; `baseline_yolo26n_seed1-2` duplicates the seed-1 weights, so it does not add another independent seed.
 5. The 300-epoch run cannot be resumed because optimizer state is missing. Its fine-tune did not improve the baseline; STOP tuning and keep the original baseline candidate.
-6. Run evaluate_test.py ONCE; copy weights to models/roadguard_best.pt; record the chosen confidence threshold.
+6. Done: ran src/evaluate_test.py once, copied the selected weights to models/roadguard_best.pt, and recorded confidence 0.40.
 7. Step 4: collect own dashcam footage + negative (no-pothole) images, label a small set, test the model on it.
 8. Steps 5-13: video inference, tracking/dedup, warning UI, GPS, SQLite events, Leaflet map, reporting adapter
    (external submission ONLY via an official authorized integration), end-to-end tests, docs.

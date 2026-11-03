@@ -1,6 +1,6 @@
 # Experiments
 
-All metrics below are from the validation split. The 100-image validation set is small, so differences around 0.02 mAP can be noise. The held-out test split has not been used.
+All model-selection metrics below are from the validation split. The 100-image validation set is small, so differences around 0.02 mAP can be noise. The separate one-time test result is in `reports/final_test_evaluation/summary.md` and was not used for tuning.
 
 | # | Name | Model | Initialization | Epochs run (best) | imgsz | Batch | Precision | Recall | mAP50 | mAP50-95 | Notes |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|
@@ -16,4 +16,4 @@ All metrics below are from the validation split. The 100-image validation set is
 
 ## Selection
 
-The 800px run has the highest recorded mAP50 and mAP50-95, but its different batch size and image size prevent attributing the change to resolution alone. The 640px baseline is the simpler comparison point. The seed-1 run is within the stated validation noise of the seed-0 baseline. The fine-tune from the interrupted 300-epoch run did not improve either mAP measure. Keep the test split untouched until the evaluation script and final candidate are ready; evaluate it once.
+The 800px run has the highest recorded mAP50 and mAP50-95, but its different batch size and image size prevent attributing the change to resolution alone. The 640px baseline is the simpler comparison point. The seed-1 run is within the stated validation noise of the seed-0 baseline. The fine-tune from the interrupted 300-epoch run did not improve either mAP measure. The original 640px baseline was selected and evaluated once on the test split; do not use that result to tune the model or threshold.
