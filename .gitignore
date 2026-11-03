@@ -1,3 +1,4 @@
 data/
 pothole-detection-DatasetNinja.tar
 .venv
+models/runs/
